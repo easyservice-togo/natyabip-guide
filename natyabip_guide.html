@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide d'Utilisation NATYABIP</title>
+    <link rel="stylesheet" href="natyabip_guide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <button class="burger-menu" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Natyabip" class="sidebar-logo">
+                <p data-translate="user_guide">Guide Utilisateur v1</p>
+            </div>
+
+            <div class="lang-switch">
+                <button class="btn-lang active" onclick="setLanguage('fr')">FR</button>
+                <button class="btn-lang" onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <ul>
+                <li><a href="#intro" data-translate="nav_intro">Introduction</a></li>
+                <li><a href="#dashboard" data-translate="nav_dashboard">Tableau de Bord</a></li>
+                <li><a href="#profile" data-translate="nav_profile">Profil</a></li>
+                <li><a href="#accounts" data-translate="nav_accounts">Comptes</a></li>
+                <li><a href="#sms-processing" data-translate="nav_sms">Traitement SMS</a></li>
+                <li><a href="#reports" data-translate="nav_reports">Rapports</a></li>
+                <li><a href="#address-book" data-translate="nav_address">Carnet d'Adresse</a></li>
+                <li><a href="#campaigns" data-translate="nav_campaigns">Campagne</a></li>
+            </ul>
+            <div class="contact-info">
+                <h3 data-translate="contact">Contact</h3>
+                <p>Phone: (+228)98 38 41 41/ (+228) 93 89 92 54/ (+228) 93 73 70 07</p>
+                <p><a href="https://www.natyabip.com/" target="_blank">www.natyabip.com</a></p>
+                <a href="Guide NATYABIP V1.pdf" download class="btn-download"
+                    data-translate="download_pdf">Télécharger en PDF</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <section id="intro" class="section">
+                <h1 data-translate="title_main">Guide d'Utilisation de NATYABIP</h1>
+                <div class="metadata">
+                    <p><strong><span data-translate="author">Rédaction</span> :</strong> NATYABIP</p>
+                    <p><strong><span data-translate="version">Version</span> :</strong> 1 - 07/01/2026</p>
+                    <p><strong>Site/Portail :</strong> <a href="https://portail.natyabip.com/">portail.natyabip.com</a>
+                    </p>
+                </div>
+                <p data-translate="intro_desc">Ce guide détaille l'utilisation de la plateforme NATYABIP SMS, couvrant
+                    la gestion du tableau de bord, des profils, des comptes, l'envoi de SMS, les rapports et les
+                    campagnes, pour une prise en main complète et efficace.</p>
+            </section>
+
+            <section id="dashboard" class="section">
+                <h2 data-translate="sec_dashboard">I. Tableau de Bord</h2>
+                <p data-translate="dashboard_intro">Le tableau de bord présente un résumé de la situation du jour et du
+                    mois en fonction du compte sélectionné.</p>
+
+                <h3 data-translate="key_features">Fonctionnalités Clés</h3>
+                <ul>
+                    <li><strong data-translate="total_balance">Solde Total :</strong> <span
+                            data-translate="total_balance_desc">Affiche le solde global associé au compte
+                            connecté.</span></li>
+                    <li><strong data-translate="profile_space">Espace Profil :</strong> <span
+                            data-translate="profile_space_desc">Accès à la section Profil, déconnexion, gestion du mot
+                            de passe et tarification.</span></li>
+                    <li><strong data-translate="day_status">Situation du Jour :</strong> <span
+                            data-translate="day_status_desc">Informations basées sur la date actuelle.</span></li>
+                    <li><strong data-translate="month_status">Situation du Mois :</strong> <span
+                            data-translate="month_status_desc">Intervalle complet du mois en cours ou période
+                            sélectionnée.</span></li>
+                    <li><strong data-translate="stats">Statistiques :</strong> <span
+                            data-translate="stats_desc">Statistiques des messages, taux et indicateurs clés.</span></li>
+                </ul>
+
+                <div class="image-wrapper grid">
+                    <img src="images/sidenav.png" alt="Vue Tableau de Bord" class="doc-image medium">
+                    <img src="images/2.png" alt="Détail Tableau de Bord" class="doc-image">
+                </div>
+            </section>
+
+            <section id="profile" class="section">
+                <h2 data-translate="sec_profile">II. Profil</h2>
+                <h3 data-translate="profile_consult">Consultation du Profil</h3>
+                <p data-translate="profile_consult_desc">Vous pouvez visualiser votre profil contenant vos informations
+                    de base (Initiales, Nom, Email, Seuil d'alerte, etc...).</p>
+
+
+                <h3 data-translate="profile_edit">Modification des Informations</h3>
+                <p data-translate="profile_edit_desc">Dans l'espace de modification de profil, vous pouvez gérer les
+                    paramètres suivants :</p>
+                <ul>
+                    <li><strong data-translate="field_company">Société :</strong> <span
+                            data-translate="field_company_desc">Nom de l'entreprise associée au compte.</span></li>
+                    <li><strong data-translate="field_lastname">Nom :</strong> <span
+                            data-translate="field_lastname_desc">Nom de famille de l'utilisateur.</span></li>
+                    <li><strong data-translate="field_firstname">Prénom :</strong> <span
+                            data-translate="field_firstname_desc">Prénom de l'utilisateur.</span></li>
+                    <li><strong data-translate="field_email">Email :</strong> <span
+                            data-translate="field_email_desc">Votre adresse électronique de contact.</span></li>
+                    <li><strong data-translate="field_phone">Numéro Cellulaire :</strong> <span
+                            data-translate="field_phone_desc">Modifier votre numéro de téléphone.</span></li>
+                    <li><strong data-translate="field_sender">Expéditeur :</strong> <span
+                            data-translate="field_sender_desc">Le nom d'expéditeur par défaut.</span></li>
+                    <li><strong data-translate="field_alert">Seuil d'alerte :</strong> <span
+                            data-translate="field_alert_desc">Niveau de crédit pour déclencher une alerte.</span></li>
+                    <li><strong data-translate="field_longsms">Long SMS :</strong> <span
+                            data-translate="field_longsms_desc">Activation de l'envoi de SMS longs (concaténés).</span>
+                    </li>
+                    <li><strong data-translate="field_encoding">Type d'Encodage :</strong> <span
+                            data-translate="field_encoding_desc">Encodage des caractères (ex: GSM7).</span></li>
+                    <li><strong data-translate="field_billing">Mode de facturation :</strong> <span
+                            data-translate="field_billing_desc">Type de paiement (Prépayé ou Postpayé).</span></li>
+                    <li><strong data-translate="field_account_status">Etat du compte :</strong> <span
+                            data-translate="field_account_status_desc">Situation actuelle du compte
+                            (Actif/Suspendu).</span></li>
+                    <li><strong data-translate="field_overdraft">Montant découvert :</strong> <span
+                            data-translate="field_overdraft_desc">Limite de crédit autorisée en cas de découvert.</span>
+                    </li>
+                </ul>
+                <p data-translate="save_changes_info">Cliquez sur <strong>Enregistrer les modifications</strong> pour
+                    valider vos changements.</p>
+
+                <div class="image-wrapper">
+                    <!-- Image Profil Edit -->
+                    <img src="images/profile.png" alt="Modification Profil" class="doc-image">
+                </div>
+            </section>
+
+            <section id="accounts" class="section">
+                <h2 data-translate="sec_accounts">III. Comptes</h2>
+
+                <h3 data-translate="balance_history">Historique Balance</h3>
+                <p data-translate="balance_history_desc">Sélectionnez le compte concerné, choisissez la plage de dates
+                    (début/fin), puis cliquez sur <strong>Rechercher</strong> pour afficher l’historique de balance.</p>
+                <div class="image-wrapper">
+                    <img src="images/comptes.png" alt="Historique Balance" class="doc-image medium">
+                    <img src="images/historique balance.png" alt="Graphique Balance" class="doc-image">
+                </div>
+
+                <h3 data-translate="header_balance">Solde</h3>
+                <p data-translate="desc_balance">Sélectionnez le compte concerné, puis cliquez sur
+                    <strong>Rechercher</strong> pour afficher le solde.
+                </p>
+                <div class="image-wrapper">
+                    <img src="images/sidesolde.png" alt="Vue Solde" class="doc-image medium">
+                    <img src="images/soldepage.png" alt="Page Solde" class="doc-image">
+                </div>
+
+                <h3 data-translate="header_statement">Relevé</h3>
+                <p data-translate="desc_statement">Sélectionnez le compte concerné, puis cliquez sur
+                    <strong>Rechercher</strong> pour afficher le relevé de compte.
+                </p>
+                <div class="image-wrapper">
+                    <img src="images/sidereleve.png" alt="Vue Relevé" class="doc-image medium">
+                    <img src="images/relevecompte.png" alt="Page Relevé" class="doc-image">
+                </div>
+
+                <h3 data-translate="sender_id">Expéditeur (Sender ID)</h3>
+                <p data-translate="sender_id_intro">Cette zone permet de gérer les expéditeurs :</p>
+                <ul>
+                    <li><strong data-translate="consult">Consulter :</strong> <span
+                            data-translate="consult_desc">Filtrer par compte ou pays.</span></li>
+                    <li><strong data-translate="request">Demande :</strong> <span data-translate="request_desc">Saisir
+                            le Sender ID souhaité puis cliquer sur <strong>VALIDER</strong>.</span></li>
+                </ul>
+                <p><em data-translate="sender_note">NB : Le traitement prend environ trois jours.</em></p>
+                <div class="image-wrapper">
+                    <img src="images/sideexpediteur.png" alt="Gestion Expéditeur" class="doc-image">
+                    <img src="images/expediteurpage.png" alt="Graphique Solde" class="doc-image">
+                </div>
+            </section>
+
+            <section id="sms-processing" class="section">
+                <h2 data-translate="sec_sms">IV. Traitement SMS</h2>
+                <h3 data-translate="simple_send">Envoi Simple</h3>
+                <p data-translate="send_steps">Pour envoyer un SMS :</p>
+                <ol>
+                    <li data-translate="step_sender">Sélectionnez l’expéditeur.</li>
+                    <li data-translate="step_recipient">Saisir le(s) destinataire(s) (numéro avec indicatif, ex:
+                        228XXXXXXXX). Séparez les numéros multiples par des <strong>points-virgules (;)</strong>.</li>
+                    <li data-translate="step_message">Saisir le message (comportant un nombre de caractère en fonction
+                        du type d’encodage)</li>
+                    <li data-translate="step_validate">Cliquez sur <strong>VALIDER</strong>.</li>
+                </ol>
+                <div class="image-wrapper">
+                    <img src="images/traitement sms.png" alt="Interface Envoi SMS" class="doc-image">
+                    <img src="images/envoiesimple.png" alt="Confirmation Envoi" class="doc-image">
+                </div>
+            </section>
+
+            <section id="reports" class="section">
+                <h2 data-translate="sec_reports">V. Rapports</h2>
+                <p data-translate="reports_intro">Consultez les rapports détaillés sur vos envois.</p>
+
+                <h3 data-translate="search_filters">Filtres de Recherche</h3>
+                <ul>
+                    <li><strong data-translate="filter_criteria">Compte / Pays / Expéditeur / Opérateur</strong> : <span
+                            data-translate="filter_criteria_desc">Filtrez selon vos besoins.</span></li>
+                    <li><strong data-translate="date_range">Plage de Date</strong> : <span
+                            data-translate="date_range_desc">Définissez la période.</span></li>
+                    <li><strong data-translate="status">État</strong> : <span data-translate="status_desc">Filtrer par
+                            (Accepté, En cours, Envoyé, Délivré, Confirmé, Rejeté).</span></li>
+                </ul>
+                <p data-translate="search_buttons">Utilisez le bouton <strong>Rechercher</strong> pour afficher les
+                    résultats ou <strong>Annuler</strong> pour réinitialiser.</p>
+
+                <h3 data-translate="daily_situation">Situation Journalière</h3>
+                <p data-translate="daily_situation_desc">Affiche la situation des SMS pour une journée donnée après
+                    sélection du compte et de la date.</p>
+
+                <div class="image-wrapper">
+                    <img src="images/rapport.png" alt="Rapport SMS" class="doc-image">
+                    <img src="images/liste.png" alt="Tableau Rapport" class="doc-image">
+                    <img src="images/graphique.png" alt="Graphique Rapport" class="doc-image">
+                </div>
+            </section>
+
+            <section id="address-book" class="section">
+                <h2 data-translate="sec_address">VI. Carnet d'Adresse</h2>
+
+                <h3 data-translate="add_contact">Ajouter un Contact</h3>
+                <p data-translate="add_contact_desc">Remplissez les champs Nom, Prénom, Indicatif (ex. 228) et Numéro.
+                    Vous pouvez assigner une catégorie (ex. Client fidèle) ou en créer une nouvelle. Cliquez sur
+                    <strong>Enregistrer</strong>.
+                </p>
+
+                <h3 data-translate="import_search">Importer & Rechercher</h3>
+                <p data-translate="import_search_desc">Utilisez le bouton <strong>Importer</strong> pour charger des
+                    contacts depuis un fichier externe (Excel). Recherchez par nom ou numéro et filtrez par période.
+                </p>
+
+                <div class="image-wrapper">
+                    <img src="images/carnetd'adresse.png" alt="Ajout Contact" class="doc-image">
+                    <img src="images/ajouterContact.png" alt="Liste Contacts" class="doc-image">
+                </div>
+            </section>
+
+            <section id="campaigns" class="section">
+                <h2 data-translate="sec_campaigns">VII. Campagne</h2>
+
+                <h3 data-translate="create_campaign">Créer une Campagne</h3>
+                <ol>
+                    <li data-translate="camp_step1">Donnez un nom à votre campagne.</li>
+                    <li data-translate="camp_step2">Choisissez la destination et l'expéditeur.</li>
+                    <li data-translate="camp_step3">Planifiez la date et l'heure.</li>
+                    <li data-translate="camp_step4">Rédigez le message (comportant un nombre de caractère en fonction du
+                        type d'encodage) et importez les contacts (Excel).</li>
+                    <li data-translate="camp_step5"><strong>Simulez</strong> pour vérifier ou validez.</li>
+                </ol>
+
+                <div class="image-wrapper">
+                    <img src="images/campagne.png" alt="Création Campagne" class="doc-image">
+                    <img src="images/creercampagne.png" alt="Détails Campagne" class="doc-image">
+                </div>
+
+                <h3 data-translate="header_detail">Détail</h3>
+                <p data-translate="desc_detail">Consultez les détails de la campagne (date, contenu, état).</p>
+                <div class="image-wrapper">
+                    <img src="images/campagne2.png" alt="Liste Campagnes" class="doc-image">
+                    <img src="images/detailcampagne.png" alt="Détails Campagne" class="doc-image">
+                </div>
+
+                <h3 data-translate="header_list">Liste</h3>
+                <p data-translate="desc_list">Filtrez et visualisez la liste de vos campagnes.</p>
+                <div class="image-wrapper">
+                    <img src="images/campagne3.png" alt="Liste Campagnes" class="doc-image">
+                    <img src="images/listecampagne.png" alt="Détails Campagne" class="doc-image">
+                </div>
+
+                <h3 data-translate="mod_active">Modifier / Activer une Campagne</h3>
+                <p data-translate="mod_active_intro">Pour modifier ou activer une campagne :</p>
+                <ol>
+                    <li data-translate="mod_step1">Sélectionnez la campagne à modifier.</li>
+                    <li data-translate="mod_step2">Modifiez la date/heure ou le message si nécessaire.</li>
+                    <li>
+                        <span data-translate="mod_step3">Changez l'état de la campagne :</span>
+                        <ul>
+                            <li><strong data-translate="state_draft">Brouillon :</strong> <span
+                                    data-translate="state_draft_desc">État par défaut à la création.</span></li>
+                            <li><strong data-translate="state_active">Active :</strong> <span
+                                    data-translate="state_active_desc">Nécessaire pour envoyer/transférer les
+                                    messages.</span></li>
+                            <li><strong data-translate="state_done">Terminée / Annulée :</strong> <span
+                                    data-translate="state_done_desc">Pour clore ou annuler la campagne.</span></li>
+                        </ul>
+                    </li>
+                    <li data-translate="mod_step4">Enregistrez les modifications.</li>
+                </ol>
+                <p><em data-translate="active_note">NB : L'état doit être sur <strong>Active</strong> pour que le
+                        message soit envoyé.</em></p>
+                <div class="image-wrapper">
+                    <img src="images/modifier campagne.png" alt="Modification Campagne" class="doc-image">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <button id="btnBackToTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
+
+    <script src="message.fr.js"></script>
+    <script src="message.en.js"></script>
+    <script src="sricpt.js"></script>
+</body>
+
+</html>
