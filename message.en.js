@@ -15,7 +15,7 @@ window.translations_en = {
     "author": "Author",
     "version": "Version",
 
-    "intro_desc": "This guide details the use of the NATYABIP SMS platform, covering dashboard management, profiles, accounts, SMS sending, reports, and campaigns, for a complete and effective handling.",
+    "intro_desc": "NatYaBip is a platform for managing SMS marketing campaigns. This guide details its usage, covering dashboard management, profiles and accounts, sending SMS, tracking reports, and organizing campaigns for a comprehensive and effective experience",
 
     "sec_dashboard": "I. Dashboard",
     "sec_profile": "II. Profile",

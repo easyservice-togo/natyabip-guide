@@ -15,7 +15,7 @@
     "author": "Rédaction",
     "version": "Version",
 
-    "intro_desc": "NatYaBip est une plateforme de gestion de campagnes marketing par SMS. Ce guide détaille son utilisation, couvrant la gestion du tableau de bord, des profils et des comptes, ainsi que l'envoi de SMS, le suivi des rapports et l'organisation des campagnes, pour une prise en main complète et efficace.",
+    "intro_desc": "Ce guide détaille l'utilisation de la plateforme NATYABIP SMS, couvrant la gestion du tableau de bord, des profils, des comptes, l'envoi de SMS, les rapports et les campagnes, pour une prise en main complète et efficace.",
 
     "sec_dashboard": "I. Tableau de Bord",
     "sec_profile": "II. Profil",
