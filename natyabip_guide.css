@@ -1,0 +1,391 @@
+/* Reset et Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+a {
+    color: rgba(218, 105, 44, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #ffffff;
+    border-right: 1px solid #e1e4e8;
+    padding: 2rem;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    text-align: center;
+    /* Center the logo and text */
+}
+
+.sidebar-logo {
+    max-width: 180px;
+    /* Reasonable width for sidebar */
+    height: auto;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .logo h2 {
+    color: rgba(218, 105, 44, 1);
+    font-size: 1.5rem;
+    display: none;
+    /* Hide if it still exists in some versions, though user removed it */
+}
+
+.sidebar .logo p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #555;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(218, 105, 44, 0.1);
+    color: rgba(218, 105, 44, 1);
+}
+
+.sidebar .contact-info {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.sidebar .contact-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    margin-left: 280px;
+    /* Width of sidebar */
+    padding: 3rem 4rem;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(218, 105, 44, 1);
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+ul,
+ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    max-width: 800px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.metadata {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid rgba(218, 105, 44, 1);
+    margin-bottom: 2rem;
+}
+
+/* Button Style */
+.btn-download {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: rgba(218, 105, 44, 1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+.btn-download:hover {
+    background-color: rgba(180, 80, 30, 1);
+}
+
+/* Language Switcher */
+.lang-switch {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.btn-lang {
+    padding: 0.25rem 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgba(218, 105, 44, 0.5);
+    color: rgba(218, 105, 44, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.btn-lang.active,
+.btn-lang:hover {
+    background-color: rgba(218, 105, 44, 1);
+    color: white;
+}
+
+/* Images Basic Style */
+.image-wrapper {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.image-wrapper.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.doc-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e4e8;
+}
+
+.doc-image.small {
+    max-width: 250px;
+}
+
+.doc-image.medium {
+    max-width: 350px;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #e1e4e8;
+        padding: 1rem;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: rgba(218, 105, 44, 1);
+        z-index: 10;
+    }
+
+    .sidebar .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding-top: 0;
+        border-bottom: none;
+        /* Cleaner look when collapsed */
+    }
+
+    /* Hide menu items by default on mobile */
+    .sidebar ul,
+    .sidebar .contact-info,
+    .sidebar .lang-switch {
+        display: none;
+    }
+
+    /* Show when active */
+    .sidebar.active ul,
+    .sidebar.active .contact-info,
+    .sidebar.active .lang-switch {
+        display: block;
+        /* Or flex for lang-switch */
+    }
+
+    .sidebar.active .lang-switch {
+        display: flex;
+        /* Keep flex layout for buttons */
+    }
+
+    .sidebar.active .logo {
+        border-bottom: 1px solid #eee;
+        /* Restore border when open */
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 2rem;
+    }
+}
+
+/* Back to Top Button */
+#btnBackToTop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgba(218, 105, 44, 1);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#btnBackToTop:hover {
+    background-color: #333;
+    /* Add a dark-grey background on hover */
+}
+
+/* Print Styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .btn-download,
+    .lang-switch {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
