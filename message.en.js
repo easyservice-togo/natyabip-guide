@@ -1,5 +1,9 @@
 window.translations_en = {
+<<<<<<< HEAD
     "user_guide": "User Guide v2",
+=======
+    "user_guide": "User Guide v1",
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_intro": "Introduction",
     "nav_dashboard": "Dashboard",
     "nav_profile": "Profile",
@@ -7,7 +11,10 @@ window.translations_en = {
     "nav_sms": "SMS Processing",
     "nav_reports": "Reports",
     "nav_address": "Address Book",
+<<<<<<< HEAD
     "nav_broadcast": "Broadcast Group",
+=======
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_campaigns": "Campaign",
 
     "contact": "Contact",
@@ -24,8 +31,12 @@ window.translations_en = {
     "sec_sms": "IV. SMS Processing",
     "sec_reports": "V. Reports",
     "sec_address": "VI. Address Book",
+<<<<<<< HEAD
     "broadcast-groups": "VII. broadcast-groups",
     "sec_campaigns": "VIII. Campaign",
+=======
+    "sec_campaigns": "VII. Campaign",
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
 
     "dashboard_intro": "The dashboard presents a summary of the daily and monthly situation based on the selected account.",
     "key_features": "Key Features",
@@ -107,12 +118,15 @@ window.translations_en = {
     "add_contact_desc": "Fill in Name, First Name, Prefix (e.g. 228) and Number. You can assign a category (e.g. Loyal Client) or create a new one. Click <strong>Save</strong>.",
     "import_search": "Import & Search",
     "import_search_desc": "Use the <strong>Import</strong> button to load contacts from an external file (Excel/CSV). Search by name or number and filter by period.",
+<<<<<<< HEAD
     "broadcast_intro": "A broadcast group lets you send the same message to several contacts at once.",
     "create_broadcast": "Create a new group",
     "broadcast_step1": "Select the group category, or click <strong>+ New</strong> to create one.",
     "broadcast_step2": "Upload the contacts file (XLSX, XLS).",
     "broadcast_step3": "Choose the processing mode: <strong>Add</strong> (contacts are added to the category) or <strong>Replace</strong> (existing contacts are deleted, then replaced).",
     "broadcast_step4": "Click <strong>Create</strong>.",
+=======
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "create_campaign": "Create Campaign",
     "camp_step1": "Name your campaign.",
     "camp_step2": "Choose destination and sender.",

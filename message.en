@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "user_guide": "User Guide v2",
+=======
+    "user_guide": "User Guide v1",
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_intro": "Introduction",
     "nav_dashboard": "Dashboard",
     "nav_profile": "Profile",
@@ -7,7 +11,10 @@
     "nav_sms": "SMS Processing",
     "nav_reports": "Reports",
     "nav_address": "Address Book",
+<<<<<<< HEAD
     "nav_broadcast-groups: "broadcast-groups",
+=======
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_campaigns": "Campaign",
 
     "contact": "Contact",
@@ -24,8 +31,12 @@
     "sec_sms": "IV. SMS Processing",
     "sec_reports": "V. Reports",
     "sec_address": "VI. Address Book",
+<<<<<<< HEAD
     "broadcast-groups": "VII. broadcast-groups"
     "sec_campaigns": "VIII. Campaign",
+=======
+    "sec_campaigns": "VII. Campaign",
+>>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
 
     "dashboard_intro": "The dashboard presents a summary of the daily and monthly situation based on the selected account.",
     "key_features": "Key Features",

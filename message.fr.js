@@ -1,9 +1,5 @@
-{
-<<<<<<< HEAD
-    "user_guide": "Guide Utilisateur v2",
-=======
+window.translations_fr = {
     "user_guide": "Guide Utilisateur v1",
->>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_intro": "Introduction",
     "nav_dashboard": "Tableau de Bord",
     "nav_profile": "Profil",
@@ -11,10 +7,6 @@
     "nav_sms": "Traitement SMS",
     "nav_reports": "Rapports",
     "nav_address": "Carnet d'Adresse",
-<<<<<<< HEAD
-    "nav_broadcast": "Groupe de Diffusion",
-=======
->>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "nav_campaigns": "Campagne",
 
     "contact": "Contact",
@@ -23,7 +15,7 @@
     "author": "Rédaction",
     "version": "Version",
 
-    "intro_desc": "Ce guide détaille l'utilisation de la plateforme NATYABIP SMS, couvrant la gestion du tableau de bord, des profils, des comptes, l'envoi de SMS, les rapports et les campagnes, pour une prise en main complète et efficace.",
+    "intro_desc": "NatYaBip est une plateforme de gestion de campagnes marketing par SMS. Ce guide détaille son utilisation, couvrant la gestion du tableau de bord, des profils et des comptes, ainsi que l'envoi de SMS, le suivi des rapports et l'organisation des campagnes, pour une prise en main complète et efficace.",
 
     "sec_dashboard": "I. Tableau de Bord",
     "sec_profile": "II. Profil",
@@ -31,12 +23,7 @@
     "sec_sms": "IV. Traitement SMS",
     "sec_reports": "V. Rapports",
     "sec_address": "VI. Carnet d'Adresse",
-<<<<<<< HEAD
-    "sec_broadcast": "VII. Groupe de diffusion",
-    "sec_campaigns": "VIII. Campagne",
-=======
     "sec_campaigns": "VII. Campagne",
->>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
 
     "dashboard_intro": "Le tableau de bord présente un résumé de la situation du jour et du mois en fonction du compte sélectionné.",
     "key_features": "Fonctionnalités Clés",
@@ -52,21 +39,33 @@
     "stats_desc": "Statistiques des messages, taux et indicateurs clés.",
 
     "profile_consult": "Consultation du Profil",
-    "profile_consult_desc": "Vous pouvez visualiser votre carte de profil contenant vos informations de base (Initiales, Nom, Email, Seuil d'alerte).",
+    "profile_consult_desc": "Vous pouvez visualiser votre profil contenant vos informations de base (Initiales, Nom, Email, Seuil d'alerte, etc...).",
     "profile_edit": "Modification des Informations",
     "profile_edit_desc": "Dans l'espace de modification de profil, vous pouvez gérer les paramètres suivants :",
+    "field_company": "Société :",
+    "field_company_desc": "Nom de l'entreprise associée au compte.",
+    "field_lastname": "Nom :",
+    "field_lastname_desc": "Nom de famille de l'utilisateur.",
+    "field_firstname": "Prénom :",
+    "field_firstname_desc": "Prénom de l'utilisateur.",
     "field_email": "Email :",
     "field_email_desc": "Votre adresse électronique de contact.",
     "field_phone": "Numéro Cellulaire :",
     "field_phone_desc": "Modifier votre numéro de téléphone.",
     "field_sender": "Expéditeur :",
-    "field_sender_desc": "Le nom d'expéditeur ou remplacement.",
+    "field_sender_desc": "Le nom d'expéditeur par défaut.",
     "field_alert": "Seuil d'alerte :",
     "field_alert_desc": "Niveau de crédit pour déclencher une alerte.",
-    "field_options": "Options :",
-    "field_options_desc": "Long SMS, Encodage (GSM7), Mode de facturation (Prépayé/Postpayé).",
-    "field_security": "Sécurité & Compte :",
-    "field_security_desc": "IP autorisée, État du compte, Expiration.",
+    "field_longsms": "Long SMS :",
+    "field_longsms_desc": "Activation de l'envoi de SMS longs (concaténés).",
+    "field_encoding": "Type d'Encodage :",
+    "field_encoding_desc": "Encodage des caractères (ex: GSM7).",
+    "field_billing": "Mode de facturation :",
+    "field_billing_desc": "Type de paiement (Prépayé ou Postpayé).",
+    "field_account_status": "Etat du compte :",
+    "field_account_status_desc": "Situation actuelle du compte (Actif/Suspendu).",
+    "field_overdraft": "Montant découvert :",
+    "field_overdraft_desc": "Limite de crédit autorisée en cas de découvert.",
     "save_changes_info": "Cliquez sur <strong>Enregistrer les modifications</strong> pour valider vos changements.",
 
     "balance_history": "Historique Balance",
@@ -106,15 +105,6 @@
     "add_contact_desc": "Remplissez les champs Nom, Prénom, Indicatif (ex. 228) et Numéro. Vous pouvez assigner une catégorie (ex. Client fidèle) ou en créer une nouvelle. Cliquez sur <strong>Enregistrer</strong>.",
     "import_search": "Importer & Rechercher",
     "import_search_desc": "Utilisez le bouton <strong>Importer</strong> pour charger des contacts depuis un fichier externe (Excel/CSV). Recherchez par nom ou numéro et filtrez par période.",
-<<<<<<< HEAD
-    "broadcast_intro": "Un groupe de diffusion permet d'envoyer un même message à plusieurs contacts à la fois.",
-    "create_broadcast": "Créer un nouveau groupe",
-    "broadcast_step1": "Sélectionnez la catégorie du groupe, ou cliquez sur <strong>+ Nouvelle</strong> pour en créer une.",
-    "broadcast_step2": "Chargez le fichier de contacts (XLSX, XLS).",
-    "broadcast_step3": "Choisissez le mode de traitement : <strong>Ajouter</strong> (les contacts s'ajoutent à la catégorie) ou <strong>Remplacer</strong> (les contacts existants sont supprimés puis remplacés).",
-    "broadcast_step4": "Cliquez sur <strong>Créer</strong>.",
-=======
->>>>>>> 037e08735e2dcd594293be46210f76ad5e5cf6e8
     "create_campaign": "Créer une Campagne",
     "camp_step1": "Donnez un nom à votre campagne.",
     "camp_step2": "Choisissez la destination et l'expéditeur.",
@@ -141,4 +131,4 @@
     "state_done_desc": "Pour clore ou annuler la campagne.",
     "mod_step4": "Enregistrez les modifications.",
     "active_note": "NB : L'état doit être sur <strong>Active</strong> pour que le message soit envoyé."
-}
+};
