@@ -19,15 +19,9 @@ function scrollToTop() {
 
 // No cache needed with inline objects, but keeping function structure
 function setLanguage(lang) {
-    let translations = {};
+    const translations = lang === 'fr' ? window.translations_fr : window.translations_en;
+    document.documentElement.lang = lang;
 
-    if (lang === 'fr') {
-        translations = window.translations_fr;
-    } else {
-        translations = window.translations_en;
-    }
-
-    // Apply translations
     if (translations) {
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
@@ -37,12 +31,11 @@ function setLanguage(lang) {
         });
     }
 
-    // Update active button
     document.querySelectorAll('.btn-lang').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.innerText.toLowerCase() === lang) {
-            btn.classList.add('active');
-        }
+        const btnLang = (btn.dataset.lang || btn.textContent.trim().toLowerCase()).toLowerCase();
+        const isActive = btnLang === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
     });
 }
 

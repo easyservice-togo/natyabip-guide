@@ -1,5 +1,5 @@
 window.translations_fr = {
-    "user_guide": "Guide Utilisateur v1",
+    "user_guide": "Guide Utilisateur v2",
     "nav_intro": "Introduction",
     "nav_dashboard": "Tableau de Bord",
     "nav_profile": "Profil",
@@ -7,6 +7,7 @@ window.translations_fr = {
     "nav_sms": "Traitement SMS",
     "nav_reports": "Rapports",
     "nav_address": "Carnet d'Adresse",
+    "nav_broadcast": "Groupe de diffusion",
     "nav_campaigns": "Campagne",
 
     "contact": "Contact",
@@ -23,7 +24,8 @@ window.translations_fr = {
     "sec_sms": "IV. Traitement SMS",
     "sec_reports": "V. Rapports",
     "sec_address": "VI. Carnet d'Adresse",
-    "sec_campaigns": "VII. Campagne",
+    "sec_broadcast": "VII. Groupe de diffusion",
+    "sec_campaigns": "VIII. Campagne",
 
     "dashboard_intro": "Le tableau de bord présente un résumé de la situation du jour et du mois en fonction du compte sélectionné.",
     "key_features": "Fonctionnalités Clés",
@@ -105,6 +107,12 @@ window.translations_fr = {
     "add_contact_desc": "Remplissez les champs Nom, Prénom, Indicatif (ex. 228) et Numéro. Vous pouvez assigner une catégorie (ex. Client fidèle) ou en créer une nouvelle. Cliquez sur <strong>Enregistrer</strong>.",
     "import_search": "Importer & Rechercher",
     "import_search_desc": "Utilisez le bouton <strong>Importer</strong> pour charger des contacts depuis un fichier externe (Excel/CSV). Recherchez par nom ou numéro et filtrez par période.",
+    "broadcast_intro": "Un groupe de diffusion permet d'envoyer un même message à plusieurs contacts à la fois.",
+    "create_broadcast": "Créer un nouveau groupe",
+    "broadcast_step1": "Sélectionnez la catégorie du groupe, ou cliquez sur <strong>+ Nouvelle</strong> pour en créer une.",
+    "broadcast_step2": "Chargez le fichier de contacts (XLSX, XLS).",
+    "broadcast_step3": "Choisissez le mode de traitement : <strong>Ajouter</strong> (les contacts s'ajoutent à la catégorie) ou <strong>Remplacer</strong> (les contacts existants sont supprimés puis remplacés).",
+    "broadcast_step4": "Cliquez sur <strong>Créer</strong>.",
     "create_campaign": "Créer une Campagne",
     "camp_step1": "Donnez un nom à votre campagne.",
     "camp_step2": "Choisissez la destination et l'expéditeur.",
